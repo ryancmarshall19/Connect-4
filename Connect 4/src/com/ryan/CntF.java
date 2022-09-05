@@ -460,10 +460,12 @@ public class CntF {
     }
 
     public void new_game(MyFrame frame) {
-        available_moves.clear();
-        frame.dispose();
-        humanMoveReady.countDown();
-        game_end.countDown();
+        if (this.initialized) {
+            available_moves.clear();
+            frame.dispose();
+            humanMoveReady.countDown();
+            game_end.countDown();
+        }
     }
 
     public void create_game_end_latch() {

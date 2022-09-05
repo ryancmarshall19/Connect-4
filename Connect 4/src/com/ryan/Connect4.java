@@ -6,8 +6,8 @@ import java.util.Arrays;
 public class Connect4 {
 
     public static void main(String[] args) {
-        CntF game = new CntF();
         while (true) {
+            CntF game = new CntF();
             play(game);
         }
     }
@@ -202,7 +202,5 @@ public class Connect4 {
                 }
             }
         }
-
-
     }
 }
